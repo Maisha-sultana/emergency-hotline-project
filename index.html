@@ -8,6 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
 <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 <body>
     <header>
@@ -32,8 +33,8 @@
                 <img  src="./assets/coin.png" alt="">
             </div>
         </div>
-        <div class="flex items-center gap-2 bg-[#00A63E] w-20 p-5 rounded-4xl h-10 mt-2">
-            <p class="font-bold text-white">Copy</p>
+        <div class="flex items-center gap-2 bg-[#00A63E] w-25 p-5 rounded-4xl h-10 mt-2">
+            <p class="font-bold text-white" id="copy-count">0 Copy</p>
         </div>
       </div>
         </nav>
@@ -60,6 +61,9 @@
                 <figure class="bg-[#FFE3E2] w-15 h-15 rounded-2xl mt-5 ml-5">
                   <img  src="./assets/emergency.png"alt="" class="rounded-xl py-5 w-8"/>
                 </figure>
+                 <button class="absolute top-3 right-3 text-gray-400 hover:text-red-500 heart-btn mt-4">
+                  <i class="fa-regular fa-heart text-xl"></i>
+                  </button>
                 <div class="card-body ">
                   <h2 id="card-title-1" class="card-title font-bold text-2xl">National Emergency Number</h2>
                   <p class="text-gray-500 text-lg">National Emergency</p>
@@ -68,8 +72,8 @@
                 </div>
                 <div class="m-5">
                 
-                 <button class="btn btn w-40  text-[#878585] border-gray-300 rounded-lg"><i class="fa-solid fa-copy"></i>Copy</button>
-                 <button class="btn btn w-40 bg-[#00A63E] text-white rounded-lg"><i class="fa-solid fa-phone "></i>Call</button>
+                 <button class="btn btn w-40  text-[#878585] border-gray-300 rounded-lg copy-btn"><i class="fa-solid fa-copy"></i>Copy</button>
+                 <button class="btn btn w-40 bg-[#00A63E] text-white rounded-lg call-btn"><i class="fa-solid fa-phone "></i>Call</button>
                 </div>
               </div>
               <!-- service card 2  -->
@@ -77,6 +81,9 @@
                 <figure class="bg-[#DFEFFF] w-15 h-15 rounded-2xl mt-5 ml-5">
                   <img  src="./assets/police.png"alt="" class="rounded-xl py-5 w-8"/>
                 </figure>
+                <button class="absolute top-3 right-3 text-gray-400 hover:text-red-500 heart-btn mt-4">
+                  <i class="fa-regular fa-heart text-xl"></i>
+                  </button>
                 <div class="card-body ">
                   <h2 id="card-title-2" class="card-title font-bold text-2xl">Police Helpline Number</h2>
                   <p class="text-gray-500 text-lg">Police</p>
@@ -85,8 +92,8 @@
                 </div>
                 <div class="m-5">
                 
-                 <button class="btn btn w-40  text-[#878585] border-gray-300 rounded-lg"><i class="fa-solid fa-copy"></i>Copy</button>
-                 <button class="btn btn w-40 bg-[#00A63E] text-white rounded-lg"><i class="fa-solid fa-phone "></i>Call</button>
+                 <button class="btn btn w-40  text-[#878585] border-gray-300 rounded-lg copy-btn"><i class="fa-solid fa-copy"></i>Copy</button>
+                 <button class="btn btn w-40 bg-[#00A63E] text-white rounded-lg call-btn"><i class="fa-solid fa-phone "></i>Call</button>
                 </div>
               </div>
               <!-- service card 3  -->
@@ -94,6 +101,9 @@
                 <figure class="bg-[#FFE3E2] w-15 h-15 rounded-2xl mt-5 ml-5">
                   <img  src="./assets/ambulance.png"alt="" class="rounded-xl py-5 w-8"/>
                 </figure>
+                <button class="absolute top-3 right-3 text-gray-400 hover:text-red-500 heart-btn mt-4">
+                  <i class="fa-regular fa-heart text-xl"></i>
+                  </button>
                 <div class="card-body ">
                   <h2 id="card-title-3" class="card-title font-bold text-2xl">Fire Service Number</h2>
                   <p class="text-gray-500 text-lg">Fire Service</p>
@@ -102,8 +112,8 @@
                 </div>
                 <div class="m-5">
                 
-                 <button class="btn btn w-40  text-[#878585] border-gray-300 rounded-lg"><i class="fa-solid fa-copy"></i>Copy</button>
-                 <button class="btn btn w-40 bg-[#00A63E] text-white rounded-lg"><i class="fa-solid fa-phone "></i>Call</button>
+                 <button class="btn btn w-40  text-[#878585] border-gray-300 rounded-lg copy-btn"><i class="fa-solid fa-copy"></i>Copy</button>
+                 <button class="btn btn w-40 bg-[#00A63E] text-white rounded-lg call-btn"><i class="fa-solid fa-phone "></i>Call</button>
                 </div>
               </div>
               <!-- service card 4 -->
@@ -111,6 +121,9 @@
                 <figure class="bg-[#FFE3E2] w-15 h-15 rounded-2xl mt-5 ml-5">
                   <img  src="./assets/ambulance.png"alt="" class="rounded-xl py-5 w-8"/>
                 </figure>
+                <button class="absolute top-3 right-3 text-gray-400 hover:text-red-500 heart-btn mt-4">
+                  <i class="fa-regular fa-heart text-xl"></i>
+                  </button>
                 <div class="card-body ">
                   <h2 id="card-title-1" class="card-title font-bold text-2xl">Ambulance Service</h2>
                   <p class="text-gray-500 text-lg">Ambulance</p>
@@ -119,8 +132,8 @@
                 </div>
                 <div class="m-5">
                 
-                 <button class="btn btn w-40  text-[#878585] border-gray-300 rounded-lg"><i class="fa-solid fa-copy"></i>Copy</button>
-                 <button class="btn btn w-40 bg-[#00A63E] text-white rounded-lg"><i class="fa-solid fa-phone "></i>Call</button>
+                 <button class="btn btn w-40  text-[#878585] border-gray-300 rounded-lg copy-btn"><i class="fa-solid fa-copy"></i>Copy</button>
+                 <button class="btn btn w-40 bg-[#00A63E] text-white rounded-lg call-btn"><i class="fa-solid fa-phone "></i>Call</button>
                 </div>
               </div>
               <!-- service 5 -->
@@ -128,6 +141,9 @@
                 <figure class="bg-[#FFE3E2] w-15 h-15 rounded-2xl mt-5 ml-5">
                   <img  src="./assets/emergency.png"alt="" class="rounded-xl py-5 w-8"/>
                 </figure>
+                <button class="absolute top-3 right-3 text-gray-400 hover:text-red-500 heart-btn mt-4">
+                  <i class="fa-regular fa-heart text-xl"></i>
+                  </button>
                 <div class="card-body ">
                   <h2 id="card-title-1" class="card-title font-bold text-2xl">Women & Child Helpline</h2>
                   <p class="text-gray-500 text-lg">Women & Child Helpline</p>
@@ -136,8 +152,8 @@
                 </div>
                 <div class="m-5">
                 
-                 <button class="btn btn w-40  text-[#878585] border-gray-300 rounded-lg"><i class="fa-solid fa-copy"></i>Copy</button>
-                 <button class="btn btn w-40 bg-[#00A63E] text-white rounded-lg"><i class="fa-solid fa-phone "></i>Call</button>
+                 <button class="btn btn w-40  text-[#878585] border-gray-300 rounded-lg copy-btn"><i class="fa-solid fa-copy"></i>Copy</button>
+                 <button class="btn btn w-40 bg-[#00A63E] text-white rounded-lg call-btn"><i class="fa-solid fa-phone "></i>Call</button>
                 </div>
               </div>
               <!-- service 6 -->
@@ -145,6 +161,9 @@
                 <figure class="bg-[#FFE3E2] w-15 h-15 rounded-2xl mt-5 ml-5">
                   <img  src="./assets/emergency.png"alt="" class="rounded-xl py-5 w-8"/>
                 </figure>
+                <button class="absolute top-3 right-3 text-gray-400 hover:text-red-500 heart-btn mt-4">
+                  <i class="fa-regular fa-heart text-xl"></i>
+                  </button>
                 <div class="card-body ">
                   <h2 id="card-title-1" class="card-title font-bold text-2xl">Anti-Corruption Helpline</h2>
                   <p class="text-gray-500 text-lg">Anti-Corruption</p>
@@ -153,8 +172,8 @@
                 </div>
                 <div class="m-5">
                 
-                 <button class="btn btn w-40  text-[#878585] border-gray-300 rounded-lg"><i class="fa-solid fa-copy"></i>Copy</button>
-                 <button class="btn btn w-40 bg-[#00A63E] text-white rounded-lg"><i class="fa-solid fa-phone "></i>Call</button>
+                 <button class="btn btn w-40  text-[#878585] border-gray-300 rounded-lg copy-btn"><i class="fa-solid fa-copy"></i>Copy</button>
+                 <button class="btn btn w-40 bg-[#00A63E] text-white rounded-lg call-btn"><i class="fa-solid fa-phone "></i>Call</button>
                 </div>
               </div>
               <!-- service 7 -->
@@ -162,6 +181,9 @@
                 <figure class="bg-[#FFE3E2] w-15 h-15 rounded-2xl mt-5 ml-5">
                   <img  src="./assets/emergency.png"alt="" class="rounded-xl py-5 w-8"/>
                 </figure>
+                <button class="absolute top-3 right-3 text-gray-400 hover:text-red-500 heart-btn mt-4">
+                  <i class="fa-regular fa-heart text-xl"></i>
+                  </button>
                 <div class="card-body ">
                   <h2 id="card-title-1" class="card-title font-bold text-2xl">Electricity Helpline</h2>
                   <p class="text-gray-500 text-lg">Electricity Outage</p>
@@ -170,8 +192,8 @@
                 </div>
                 <div class="m-5">
                 
-                 <button class="btn btn w-40  text-[#878585] border-gray-300 rounded-lg"><i class="fa-solid fa-copy"></i>Copy</button>
-                 <button class="btn btn w-40 bg-[#00A63E] text-white rounded-lg"><i class="fa-solid fa-phone "></i>Call</button>
+                 <button class="btn btn w-40  text-[#878585] border-gray-300 rounded-lg copy-btn"><i class="fa-solid fa-copy"></i>Copy</button>
+                 <button class="btn btn w-40 bg-[#00A63E] text-white rounded-lg call-btn"><i class="fa-solid fa-phone "></i>Call</button>
                 </div>
               </div>
               <!-- service 8 -->
@@ -179,6 +201,9 @@
                 <figure class="bg-[#FFE3E2] w-15 h-15 rounded-2xl mt-5 ml-5">
                   <img  src="./assets/emergency.png"alt="" class="rounded-xl py-5 w-8"/>
                 </figure>
+                <button class="absolute top-3 right-3 text-gray-400 hover:text-red-500 heart-btn mt-4">
+                  <i class="fa-regular fa-heart text-xl"></i>
+                  </button>
                 <div class="card-body ">
                   <h2 id="card-title-1" class="card-title font-bold text-2xl">Brac Helpline</h2>
                   <p class="text-gray-500 text-lg">Brac</p>
@@ -187,8 +212,8 @@
                 </div>
                 <div class="m-5">
                 
-                 <button class="btn btn w-40  text-[#878585] border-gray-300 rounded-lg"><i class="fa-solid fa-copy"></i>Copy</button>
-                 <button class="btn btn w-40 bg-[#00A63E] text-white rounded-lg"><i class="fa-solid fa-phone "></i>Call</button>
+                 <button class="btn btn w-40  text-[#878585] border-gray-300 rounded-lg copy-btn"><i class="fa-solid fa-copy"></i>Copy</button>
+                 <button class="btn btn w-40 bg-[#00A63E] text-white rounded-lg call-btn"><i class="fa-solid fa-phone "></i>Call</button>
                 </div>
               </div>
               <!-- service 9 -->
@@ -196,6 +221,9 @@
                 <figure class="bg-[#FFE3E2] w-15 h-15 rounded-2xl mt-5 ml-5">
                   <img  src="./assets/emergency.png"alt="" class="rounded-xl py-5 w-8"/>
                 </figure>
+                <button class="absolute top-3 right-3 text-gray-400 hover:text-red-500 heart-btn mt-4">
+                  <i class="fa-regular fa-heart text-xl"></i>
+                  </button>
                 <div class="card-body ">
                   <h2 id="card-title-1" class="card-title font-bold text-2xl">Bangladesh Railway Helpline </h2>
                   <p class="text-gray-500 text-lg">Bangladesh Railway</p>
@@ -204,8 +232,8 @@
                 </div>
                 <div class="m-5">
                 
-                 <button class="btn btn w-40  text-[#878585] border-gray-300 rounded-lg"><i class="fa-solid fa-copy"></i>Copy</button>
-                 <button class="btn btn w-40 bg-[#00A63E] text-white rounded-lg"><i class="fa-solid fa-phone "></i>Call</button>
+                 <button class="btn btn w-40  text-[#878585] border-gray-300 rounded-lg copy-btn"><i class="fa-solid fa-copy"></i>Copy</button>
+                 <button class="btn btn w-40 bg-[#00A63E] text-white rounded-lg call-btn"><i class="fa-solid fa-phone "></i>Call</button>
                 </div>
               </div>
             </div>
@@ -215,13 +243,16 @@
         <aside id="cart-box" class="col-span-3 shadow-sm">
           <div class="bg-white rounded flex justify-between p-4">
             <h2 class="font-semibold mb-5 mt-5 "><i class="fa-regular fa-clock text-gray-500 "></i> Call History</h2>
-            <div class="flex justify-center items-center gap-2 bg-[#00A63E] w-25 p-5 rounded-4xl h-8 mt-2">
-            <p class="font-medium text-white">Clear</p>
+
+            <div id="btn-clear" class="flex justify-center items-center gap-2 bg-[#00A63E] w-25 p-5 rounded-4xl h-8 mt-2">
+                <button class="text-white" >Clear</button>
         </div>
           </div>
-          
+          <div id="cart-container" class="p-4"></div>
         </aside>
       </section>
     </main>
+
+    <script src="script/index.js"></script>
 </body>
 </html>
