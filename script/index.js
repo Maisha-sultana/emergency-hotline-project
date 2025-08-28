@@ -30,14 +30,14 @@ if (clickedBtn.classList.contains("call-btn")) {
   const serviceNumber = card.querySelector("h3").innerText;
 
   if (coinCount < 20) {
-    alert("Not enough coins to make the call!");
+    alert("Not enough coins to make the call.You Need minimum 20 coins to make a call");
     return;
   }
 
   coinCount -= 20;
   coinCountElement.innerText = coinCount;
 
-  alert("Calling " + serviceName + " at " + serviceNumber);
+  alert("Calling " + serviceName + " Service " + serviceNumber);
 
   const callTime = new Date().toLocaleTimeString();
 
@@ -68,7 +68,7 @@ if (clickedBtn.classList.contains("call-btn")) {
  
   newEntry.appendChild(flexContainer);
    newEntry.appendChild(numberPara);
-   
+
   cartContainer.appendChild(newEntry);
 
 }
@@ -82,7 +82,7 @@ if (clickedBtn.classList.contains("copy-btn")) {
   const card = clickedBtn.closest(".card");
   const serviceNumber = card.querySelector("h3").innerText;
 
-  alert("Number " + serviceNumber + " copied!");
+  alert("Number has copied :" + serviceNumber );
 
   copyCount += 1;
   copyCountElement.innerText = copyCount + " Copy";

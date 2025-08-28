@@ -12,7 +12,7 @@
 </head>
 <body>
     <header>
-        <nav class="flex justify-between px-20 py-3">
+        <nav class="flex flex-col md:flex-row justify-between items-center px-4 md:px-20 py-3 gap-4">
            <div class="flex gap-2 ">
              <img src="./assets/logo.png" alt="" class="w-15" />
         <div class="">
@@ -50,12 +50,12 @@
 
         <section id="banner"></section>
 
-      <section id="porducts-container" class="w-11/12 mx-auto py-10 grid grid-cols-12 gap-8 ">
-        <section id="product-box" class="col-span-9">
+      <section id="porducts-container" class="w-11/12 mx-auto py-10 grid grid-cols-1 lg:grid-cols-12 gap-8 ">
+        <section id="product-box" class="lg:col-span-9">
           <div class="service">
         
 
-            <div class="service-items grid grid-cols-3 gap-5">
+            <div class="service-items grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
               <!-- service card 1  -->
               <div id="card-1" class="card bg-base-100 shadow-sm">
                 <figure class="bg-[#FFE3E2] w-15 h-15 rounded-2xl mt-5 ml-5">
@@ -240,7 +240,7 @@
           </div>
         </section>
 
-        <aside id="cart-box" class="col-span-3 shadow-sm">
+        <aside id="cart-box" class="lg:col-span-3 shadow-sm mt-8 lg:mt-0">
           <div class="bg-white rounded flex justify-between p-4">
             <h2 class="font-semibold mb-5 mt-5 "><i class="fa-regular fa-clock text-gray-500 "></i> Call History</h2>
 
