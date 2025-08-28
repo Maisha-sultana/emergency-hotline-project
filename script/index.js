@@ -6,7 +6,7 @@ function getElement(id) {
 
 let heartCount = 0;
 let coinCount = 100;
- let copyCount = 0;
+let copyCount = 0;
 
 const heartCountElement = document.getElementsByTagName("nav")[0].children[1].children[0].children[0];
 const coinCountElement = document.getElementsByTagName("nav")[0].children[1].children[1].children[0];
@@ -78,8 +78,12 @@ if (clickedBtn.className.includes("copy-btn")) {
 
 
 //   heart
-  if (target.tagName ===  target.className.includes("fa-heart")) {
-    heartCount = heartCount + 1;
+  if (target.classList.contains("fa-heart")) {
+  
+    if (target.classList.contains("fa-regular")) {
+      heartCount = heartCount + 1;
+    } 
+
     heartCountElement.innerText = heartCount;
   }
 });
